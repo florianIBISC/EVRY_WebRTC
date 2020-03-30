@@ -5,14 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script>
-  $( function() {
-    $( ".draggable" ).draggable();
-    $( ".resizable" ).resizable();
-  } );
+
   </script>
   <menu type="context" id="menuLocal">
     <menuitem label="Rafraîchir" onclick="window.location.reload()"></menuitem>
@@ -29,15 +26,12 @@
   <div class="copy">Envoyez l'url à votre ami</div>
 
 
-  <div class="resizable">
-    <video id="localVideo" autoplay muted class="draggable" contextmenu="menuLocal" controls></video>
+  <div class="resizable draggable" id="containerLocalVideo" contextmenu="menuLocal">
+    <video id="localVideo" autoplay muted class="draggable" contextmenu="menuLocal" controls ></video>
   </div>
-  <div class="resizable">
+  <div class="resizable draggable" id="containerRemoteVideo" contextmenu="menuRemote">
     <video id="remoteVideo" autoplay class="draggable" contextmenu="menuRemote" controls></video>
   </div>
-    
-  
-
   <script src="script.js"></script>
 </body>
 </html>

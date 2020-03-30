@@ -102,34 +102,31 @@ function localDescCreated(desc) {
 
 
 function mettrePremierPlanLocalVideo(){
-    let index = $('#remoteVideo').css("z-index");
-    index ++;
-    $('#localVideo').css("z-index",index);
+    let index = $('#containerRemoteVideo').css("z-index");
+    $('#containerLocalVideo').css("z-index",index+1);
     console.log("Index local video : "+index);
 }
 
 function mettreSecondPlanLocalVideo(){
-  let index = $('#remoteVideo').css("z-index");
-  index --;
-  $('#localVideo').css("z-index",index);
+  let index = $('#containerRemoteVideo').css("z-index");
+  $('#containerLocalVideo').css("z-index",index-1);
   console.log("Index local video : "+index);
 }
 
 function mettrePremierPlanRemoteVideo(){
-  let index = $('#localVideo').css("z-index");
-  index ++;
-  $('#remoteVideo').css("z-index","3");
+  let index = $('#containerLocalVideo').css("z-index");
+  $('#containerRemoteVideo').css("z-index",index+1);
   console.log("Index remote video : "+index);
 }
 
 
 function mettreSecondPlanRemoteVideo(){
-  let index = $('#localVideo').css("z-index");
-  index --;
-  $('#remoteVideo').css("z-index","1");
+  let index = $('#containerLocalVideo').css("z-index");
+  $('#containerRemoteVideo').css("z-index",index-1);
   console.log("Index remote video : "+index);
 }
 
-
-navigator.getUserMedia = navigator.getUserMedia ||
-  navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
+  $( function() {
+    $( ".resizable" ).draggable();
+    $( ".resizable" ).resizable();
+  });
