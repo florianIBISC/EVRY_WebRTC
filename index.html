@@ -11,7 +11,10 @@
   <script>
   $( function() {
     $( ".resizable" ).draggable();
-    $( ".resizable" ).resizable();
+    $( ".resizable" ).resizable({
+      handles: 'se',
+      aspectRatio: 2 / 1
+    });
   } );
   </script>
   <menu type="context" id="menuLocal">
