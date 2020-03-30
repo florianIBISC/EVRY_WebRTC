@@ -11,6 +11,7 @@ body {
     /*max-width: calc(50% - 100px);*/
     max-width: 80%;
     max-height: 80%;
+    position: relative;
     margin: 0 50px;
     box-sizing: border-box;
     border-radius: 2px;
