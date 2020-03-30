@@ -9,12 +9,12 @@ body {
   }
   video {
     /*max-width: calc(50% - 100px);*/
-    max-width: 80%;
+    width: 100%;
     max-height: 80%;
     position: relative;
     margin: 0 50px;
     box-sizing: border-box;
-    border-radius: 2px;
+    border-radius: 5px;
     padding: 0;
     z-index: 2;
     box-shadow: rgba(156, 172, 172, 0.2) 0px 2px 2px, rgba(156, 172, 172, 0.2) 0px 4px 4px, rgba(156, 172, 172, 0.2) 0px 8px 8px, rgba(156, 172, 172, 0.2) 0px 16px 16px, rgba(156, 172, 172, 0.2) 0px 32px 32px, rgba(156, 172, 172, 0.2) 0px 64px 64px;
@@ -26,4 +26,18 @@ body {
     transform: translateX(-50%);
     font-size: 16px;
     color: rgba(0, 0, 0, 0.5);
+  }
+
+    #localVideo{
+        position: relative;
+        padding: -20%;
+        min-width: 150px;
+        min-height: 150px;
+    }
+
+  .resizable{
+      max-width: 600px;
+      width: 400px;
+      min-width: 150px;
+      min-height: 150px;
   }

@@ -31,5 +31,5 @@ const server = https.createServer({
  
 // Lancement
 server.listen(8080, function() {
-    console.log("Static server is up on http://localhost:8080")
+    console.log("Static server sur http://localhost:8080")
 })

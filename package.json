@@ -1,0 +1,27 @@
+{
+  "name": "evry_webrtc",
+  "version": "1.0.0",
+  "description": "Bonjour à tous ! Le but de ce projet était d'offrir une application de visioconférence basée sur la technologie WebRTC. Les contraintes étaient de permettre de retailler les fenêtres à la souris ainsi que de déplacer les fenêtres. De plus la gestion de la profondeur était un élément indispensable.",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "fs": "^0.0.1-security",
+    "https": "^1.0.0",
+    "nodemon": "^2.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/florianIBISC/EVRY_WebRTC.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/florianIBISC/EVRY_WebRTC/issues"
+  },
+  "homepage": "https://github.com/florianIBISC/EVRY_WebRTC#readme"
+}
